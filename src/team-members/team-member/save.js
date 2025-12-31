@@ -1,20 +1,42 @@
 import { RichText, useBlockProps } from "@wordpress/block-editor";
+import { Icon } from "@wordpress/components";
 import { __ } from '@wordpress/i18n'
 
 export default function Save({ attributes }) {
-    const { name, bio } = attributes
+    const { name, bio, url, alt, id, socialLinks } = attributes
 
 
     return <div {...useBlockProps.save()}>
-        <RichText.Content
+        {url && <img
+            src={url}
+            alt={alt}
+            className={id ? `wp-image-${id}` : null}
+        />}
+        {name && <RichText.Content
             placeholder={__("Member Name", 'team-member')}
             tagName="h4"
             value={name}
-        />
-        <RichText.Content
+        />}
+        {bio && <RichText.Content
             placeholder={__("Member Bio", 'team-member')}
             tagName="p"
             value={bio}
-        />
+        />}
+        {socialLinks.length > 0 &&
+            <div className='wp-block-create-block-course-team-member-social-links'>
+                <ul>
+                    {socialLinks.map((item, index) => {
+                        return (
+                            <li key={index}>
+                                <a href={item.link}>
+                                    <Icon icon={item.icon} />
+                                </a>
+
+                            </li>
+                        )
+                    })}
+                </ul>
+            </div>
+        }
     </div>
 }

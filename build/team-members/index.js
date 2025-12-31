@@ -1,4 +1,5 @@
 /******/ (() => { // webpackBootstrap
+/******/ 	"use strict";
 /******/ 	var __webpack_modules__ = ({
 
 /***/ "./src/team-members/block.json"
@@ -7,8 +8,7 @@
   \*************************************/
 (module) {
 
-"use strict";
-module.exports = /*#__PURE__*/JSON.parse('{"$schema":"https://schemas.wp.org/trunk/block.json","apiVersion":3,"name":"create-block/team-members","version":"0.1.0","title":"Team Members","category":"text","icon":"groups","description":"This is team members block","example":{},"supports":{"html":false},"attributes":{"columns":{"type":"number","default":2}},"textdomain":"team-members","editorScript":"file:./index.js","editorStyle":"file:./index.css","style":"file:./style-index.css","viewScript":"file:./view.js"}');
+module.exports = /*#__PURE__*/JSON.parse('{"$schema":"https://schemas.wp.org/trunk/block.json","apiVersion":3,"name":"create-block/team-members","version":"0.1.0","title":"Team Members","category":"text","icon":"groups","description":"This is team members block","example":{},"supports":{"html":false,"align":["wide"]},"attributes":{"columns":{"type":"number","default":2}},"textdomain":"team-members","editorScript":"file:./index.js","editorStyle":"file:./index.css","style":"file:./style-index.css","viewScript":"file:./view.js"}');
 
 /***/ },
 
@@ -18,7 +18,6 @@ module.exports = /*#__PURE__*/JSON.parse('{"$schema":"https://schemas.wp.org/tru
   \**********************************/
 (__unused_webpack_module, __webpack_exports__, __webpack_require__) {
 
-"use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "default": () => (/* binding */ Edit)
@@ -29,8 +28,10 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _wordpress_block_editor__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_wordpress_block_editor__WEBPACK_IMPORTED_MODULE_1__);
 /* harmony import */ var _wordpress_components__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @wordpress/components */ "@wordpress/components");
 /* harmony import */ var _wordpress_components__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(_wordpress_components__WEBPACK_IMPORTED_MODULE_2__);
-/* harmony import */ var react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! react/jsx-runtime */ "react/jsx-runtime");
-/* harmony import */ var react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__);
+/* harmony import */ var _editor_scss__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./editor.scss */ "./src/team-members/editor.scss");
+/* harmony import */ var react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! react/jsx-runtime */ "react/jsx-runtime");
+/* harmony import */ var react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4___default = /*#__PURE__*/__webpack_require__.n(react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__);
+
 
 
 
@@ -48,13 +49,13 @@ function Edit({
       columns
     });
   };
-  return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsxs)("div", {
+  return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsxs)("div", {
     ...(0,_wordpress_block_editor__WEBPACK_IMPORTED_MODULE_1__.useBlockProps)({
       className: `has-${columns}-columns`
     }),
-    children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)(_wordpress_block_editor__WEBPACK_IMPORTED_MODULE_1__.InspectorControls, {
-      children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)(_wordpress_components__WEBPACK_IMPORTED_MODULE_2__.PanelBody, {
-        children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)(_wordpress_components__WEBPACK_IMPORTED_MODULE_2__.RangeControl, {
+    children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)(_wordpress_block_editor__WEBPACK_IMPORTED_MODULE_1__.InspectorControls, {
+      children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)(_wordpress_components__WEBPACK_IMPORTED_MODULE_2__.PanelBody, {
+        children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)(_wordpress_components__WEBPACK_IMPORTED_MODULE_2__.RangeControl, {
           label: (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_0__.__)('Columns', 'team-members'),
           min: 1,
           max: 6,
@@ -62,13 +63,53 @@ function Edit({
           value: columns
         })
       })
-    }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)(_wordpress_block_editor__WEBPACK_IMPORTED_MODULE_1__.InnerBlocks, {
+    }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)(_wordpress_block_editor__WEBPACK_IMPORTED_MODULE_1__.InnerBlocks, {
       allowedBlocks: ['create-block/team-member'],
+      orientation: "horizontal",
       template: [['create-block/team-member'], ['create-block/team-member'], ['create-block/team-member']]
       // templateLock="all"
     })]
   });
 }
+
+/***/ },
+
+/***/ "./src/team-members/editor.scss"
+/*!**************************************!*\
+  !*** ./src/team-members/editor.scss ***!
+  \**************************************/
+(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
+
+__webpack_require__.r(__webpack_exports__);
+// extracted by mini-css-extract-plugin
+
+
+/***/ },
+
+/***/ "./src/team-members/index.js"
+/*!***********************************!*\
+  !*** ./src/team-members/index.js ***!
+  \***********************************/
+(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
+
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var _wordpress_blocks__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @wordpress/blocks */ "@wordpress/blocks");
+/* harmony import */ var _wordpress_blocks__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_wordpress_blocks__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var _style_scss__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./style.scss */ "./src/team-members/style.scss");
+/* harmony import */ var _edit__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./edit */ "./src/team-members/edit.js");
+/* harmony import */ var _save__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./save */ "./src/team-members/save.js");
+/* harmony import */ var _block_json__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./block.json */ "./src/team-members/block.json");
+/* harmony import */ var _team_member__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./team-member */ "./src/team-members/team-member/index.js");
+
+
+
+
+
+
+(0,_wordpress_blocks__WEBPACK_IMPORTED_MODULE_0__.registerBlockType)(_block_json__WEBPACK_IMPORTED_MODULE_4__.name, {
+  edit: _edit__WEBPACK_IMPORTED_MODULE_2__["default"],
+  save: _save__WEBPACK_IMPORTED_MODULE_3__["default"]
+});
 
 /***/ },
 
@@ -78,7 +119,6 @@ function Edit({
   \**********************************/
 (__unused_webpack_module, __webpack_exports__, __webpack_require__) {
 
-"use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "default": () => (/* binding */ save)
@@ -109,9 +149,11 @@ function save({
 /*!*************************************!*\
   !*** ./src/team-members/style.scss ***!
   \*************************************/
-() {
+(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
 
-throw new Error("Module build failed (from ./node_modules/mini-css-extract-plugin/dist/loader.js):\nHookWebpackError: Module build failed (from ./node_modules/sass-loader/dist/cjs.js):\nMissing math operator.\n\u001b[34m  ╷\u001b[0m\n\u001b[34m8 │\u001b[0m                 width: calc(\u001b[31m100% / #{$i}- 20px\u001b[0m);\n\u001b[34m  │\u001b[0m \u001b[31m                            ^^^^^^^^^^^^^^^^^^\u001b[0m\n\u001b[34m  ╵\u001b[0m\n  src/team-members/style.scss 8:17  root stylesheet\n    at tryRunOrWebpackError (/Users/th29/projects/wp-block-dev/wp-content/plugins/team-members/node_modules/webpack/lib/HookWebpackError.js:114:9)\n    at __webpack_require_module__ (/Users/th29/projects/wp-block-dev/wp-content/plugins/team-members/node_modules/webpack/lib/Compilation.js:5578:12)\n    at __webpack_require__ (/Users/th29/projects/wp-block-dev/wp-content/plugins/team-members/node_modules/webpack/lib/Compilation.js:5525:18)\n    at /Users/th29/projects/wp-block-dev/wp-content/plugins/team-members/node_modules/webpack/lib/Compilation.js:5613:20\n    at symbolIterator (/Users/th29/projects/wp-block-dev/wp-content/plugins/team-members/node_modules/neo-async/async.js:3485:9)\n    at done (/Users/th29/projects/wp-block-dev/wp-content/plugins/team-members/node_modules/neo-async/async.js:3527:9)\n    at Hook.eval [as callAsync] (eval at create (/Users/th29/projects/wp-block-dev/wp-content/plugins/team-members/node_modules/tapable/lib/HookCodeFactory.js:31:10), <anonymous>:15:1)\n    at Hook.CALL_ASYNC_DELEGATE [as _callAsync] (/Users/th29/projects/wp-block-dev/wp-content/plugins/team-members/node_modules/tapable/lib/Hook.js:21:14)\n    at /Users/th29/projects/wp-block-dev/wp-content/plugins/team-members/node_modules/webpack/lib/Compilation.js:5500:43\n    at symbolIterator (/Users/th29/projects/wp-block-dev/wp-content/plugins/team-members/node_modules/neo-async/async.js:3482:9)\n    at timesSync (/Users/th29/projects/wp-block-dev/wp-content/plugins/team-members/node_modules/neo-async/async.js:2297:7)\n    at Object.eachLimit (/Users/th29/projects/wp-block-dev/wp-content/plugins/team-members/node_modules/neo-async/async.js:3463:5)\n    at /Users/th29/projects/wp-block-dev/wp-content/plugins/team-members/node_modules/webpack/lib/Compilation.js:5463:16\n    at symbolIterator (/Users/th29/projects/wp-block-dev/wp-content/plugins/team-members/node_modules/neo-async/async.js:3485:9)\n    at timesSync (/Users/th29/projects/wp-block-dev/wp-content/plugins/team-members/node_modules/neo-async/async.js:2297:7)\n    at Object.eachLimit (/Users/th29/projects/wp-block-dev/wp-content/plugins/team-members/node_modules/neo-async/async.js:3463:5)\n    at /Users/th29/projects/wp-block-dev/wp-content/plugins/team-members/node_modules/webpack/lib/Compilation.js:5431:15\n    at symbolIterator (/Users/th29/projects/wp-block-dev/wp-content/plugins/team-members/node_modules/neo-async/async.js:3485:9)\n    at done (/Users/th29/projects/wp-block-dev/wp-content/plugins/team-members/node_modules/neo-async/async.js:3527:9)\n    at /Users/th29/projects/wp-block-dev/wp-content/plugins/team-members/node_modules/webpack/lib/Compilation.js:5377:8\n    at /Users/th29/projects/wp-block-dev/wp-content/plugins/team-members/node_modules/webpack/lib/Compilation.js:3781:6\n    at /Users/th29/projects/wp-block-dev/wp-content/plugins/team-members/node_modules/webpack/lib/HookWebpackError.js:95:2\n    at Hook.eval [as callAsync] (eval at create (/Users/th29/projects/wp-block-dev/wp-content/plugins/team-members/node_modules/tapable/lib/HookCodeFactory.js:31:10), <anonymous>:15:1)\n    at Cache.store (/Users/th29/projects/wp-block-dev/wp-content/plugins/team-members/node_modules/webpack/lib/Cache.js:114:20)\n    at ItemCacheFacade.store (/Users/th29/projects/wp-block-dev/wp-content/plugins/team-members/node_modules/webpack/lib/CacheFacade.js:141:15)\n    at /Users/th29/projects/wp-block-dev/wp-content/plugins/team-members/node_modules/webpack/lib/Compilation.js:3780:11\n    at /Users/th29/projects/wp-block-dev/wp-content/plugins/team-members/node_modules/webpack/lib/Cache.js:100:5\n    at Hook.eval [as callAsync] (eval at create (/Users/th29/projects/wp-block-dev/wp-content/plugins/team-members/node_modules/tapable/lib/HookCodeFactory.js:31:10), <anonymous>:16:1)\n    at Cache.get (/Users/th29/projects/wp-block-dev/wp-content/plugins/team-members/node_modules/webpack/lib/Cache.js:82:18)\n    at ItemCacheFacade.get (/Users/th29/projects/wp-block-dev/wp-content/plugins/team-members/node_modules/webpack/lib/CacheFacade.js:115:15)\n    at Compilation._codeGenerationModule (/Users/th29/projects/wp-block-dev/wp-content/plugins/team-members/node_modules/webpack/lib/Compilation.js:3747:9)\n    at codeGen (/Users/th29/projects/wp-block-dev/wp-content/plugins/team-members/node_modules/webpack/lib/Compilation.js:5365:11)\n    at symbolIterator (/Users/th29/projects/wp-block-dev/wp-content/plugins/team-members/node_modules/neo-async/async.js:3482:9)\n    at timesSync (/Users/th29/projects/wp-block-dev/wp-content/plugins/team-members/node_modules/neo-async/async.js:2297:7)\n    at Object.eachLimit (/Users/th29/projects/wp-block-dev/wp-content/plugins/team-members/node_modules/neo-async/async.js:3463:5)\n    at /Users/th29/projects/wp-block-dev/wp-content/plugins/team-members/node_modules/webpack/lib/Compilation.js:5395:14\n    at processQueue (/Users/th29/projects/wp-block-dev/wp-content/plugins/team-members/node_modules/webpack/lib/util/processAsyncTree.js:61:4)\n    at process.processTicksAndRejections (node:internal/process/task_queues:84:11)\n-- inner error --\nError: Module build failed (from ./node_modules/sass-loader/dist/cjs.js):\nMissing math operator.\n\u001b[34m  ╷\u001b[0m\n\u001b[34m8 │\u001b[0m                 width: calc(\u001b[31m100% / #{$i}- 20px\u001b[0m);\n\u001b[34m  │\u001b[0m \u001b[31m                            ^^^^^^^^^^^^^^^^^^\u001b[0m\n\u001b[34m  ╵\u001b[0m\n  src/team-members/style.scss 8:17  root stylesheet\n    at Object.<anonymous> (/Users/th29/projects/wp-block-dev/wp-content/plugins/team-members/node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[4].use[1]!/Users/th29/projects/wp-block-dev/wp-content/plugins/team-members/node_modules/postcss-loader/dist/cjs.js??ruleSet[1].rules[4].use[2]!/Users/th29/projects/wp-block-dev/wp-content/plugins/team-members/node_modules/sass-loader/dist/cjs.js??ruleSet[1].rules[4].use[3]!/Users/th29/projects/wp-block-dev/wp-content/plugins/team-members/src/team-members/style.scss:1:7)\n    at /Users/th29/projects/wp-block-dev/wp-content/plugins/team-members/node_modules/webpack/lib/javascript/JavascriptModulesPlugin.js:551:10\n    at Hook.eval [as call] (eval at create (/Users/th29/projects/wp-block-dev/wp-content/plugins/team-members/node_modules/tapable/lib/HookCodeFactory.js:19:10), <anonymous>:7:1)\n    at Hook.CALL_DELEGATE [as _call] (/Users/th29/projects/wp-block-dev/wp-content/plugins/team-members/node_modules/tapable/lib/Hook.js:16:14)\n    at /Users/th29/projects/wp-block-dev/wp-content/plugins/team-members/node_modules/webpack/lib/Compilation.js:5580:39\n    at tryRunOrWebpackError (/Users/th29/projects/wp-block-dev/wp-content/plugins/team-members/node_modules/webpack/lib/HookWebpackError.js:109:7)\n    at __webpack_require_module__ (/Users/th29/projects/wp-block-dev/wp-content/plugins/team-members/node_modules/webpack/lib/Compilation.js:5578:12)\n    at __webpack_require__ (/Users/th29/projects/wp-block-dev/wp-content/plugins/team-members/node_modules/webpack/lib/Compilation.js:5525:18)\n    at /Users/th29/projects/wp-block-dev/wp-content/plugins/team-members/node_modules/webpack/lib/Compilation.js:5613:20\n    at symbolIterator (/Users/th29/projects/wp-block-dev/wp-content/plugins/team-members/node_modules/neo-async/async.js:3485:9)\n    at done (/Users/th29/projects/wp-block-dev/wp-content/plugins/team-members/node_modules/neo-async/async.js:3527:9)\n    at Hook.eval [as callAsync] (eval at create (/Users/th29/projects/wp-block-dev/wp-content/plugins/team-members/node_modules/tapable/lib/HookCodeFactory.js:31:10), <anonymous>:15:1)\n    at Hook.CALL_ASYNC_DELEGATE [as _callAsync] (/Users/th29/projects/wp-block-dev/wp-content/plugins/team-members/node_modules/tapable/lib/Hook.js:21:14)\n    at /Users/th29/projects/wp-block-dev/wp-content/plugins/team-members/node_modules/webpack/lib/Compilation.js:5500:43\n    at symbolIterator (/Users/th29/projects/wp-block-dev/wp-content/plugins/team-members/node_modules/neo-async/async.js:3482:9)\n    at timesSync (/Users/th29/projects/wp-block-dev/wp-content/plugins/team-members/node_modules/neo-async/async.js:2297:7)\n    at Object.eachLimit (/Users/th29/projects/wp-block-dev/wp-content/plugins/team-members/node_modules/neo-async/async.js:3463:5)\n    at /Users/th29/projects/wp-block-dev/wp-content/plugins/team-members/node_modules/webpack/lib/Compilation.js:5463:16\n    at symbolIterator (/Users/th29/projects/wp-block-dev/wp-content/plugins/team-members/node_modules/neo-async/async.js:3485:9)\n    at timesSync (/Users/th29/projects/wp-block-dev/wp-content/plugins/team-members/node_modules/neo-async/async.js:2297:7)\n    at Object.eachLimit (/Users/th29/projects/wp-block-dev/wp-content/plugins/team-members/node_modules/neo-async/async.js:3463:5)\n    at /Users/th29/projects/wp-block-dev/wp-content/plugins/team-members/node_modules/webpack/lib/Compilation.js:5431:15\n    at symbolIterator (/Users/th29/projects/wp-block-dev/wp-content/plugins/team-members/node_modules/neo-async/async.js:3485:9)\n    at done (/Users/th29/projects/wp-block-dev/wp-content/plugins/team-members/node_modules/neo-async/async.js:3527:9)\n    at /Users/th29/projects/wp-block-dev/wp-content/plugins/team-members/node_modules/webpack/lib/Compilation.js:5377:8\n    at /Users/th29/projects/wp-block-dev/wp-content/plugins/team-members/node_modules/webpack/lib/Compilation.js:3781:6\n    at /Users/th29/projects/wp-block-dev/wp-content/plugins/team-members/node_modules/webpack/lib/HookWebpackError.js:95:2\n    at Hook.eval [as callAsync] (eval at create (/Users/th29/projects/wp-block-dev/wp-content/plugins/team-members/node_modules/tapable/lib/HookCodeFactory.js:31:10), <anonymous>:15:1)\n    at Cache.store (/Users/th29/projects/wp-block-dev/wp-content/plugins/team-members/node_modules/webpack/lib/Cache.js:114:20)\n    at ItemCacheFacade.store (/Users/th29/projects/wp-block-dev/wp-content/plugins/team-members/node_modules/webpack/lib/CacheFacade.js:141:15)\n    at /Users/th29/projects/wp-block-dev/wp-content/plugins/team-members/node_modules/webpack/lib/Compilation.js:3780:11\n    at /Users/th29/projects/wp-block-dev/wp-content/plugins/team-members/node_modules/webpack/lib/Cache.js:100:5\n    at Hook.eval [as callAsync] (eval at create (/Users/th29/projects/wp-block-dev/wp-content/plugins/team-members/node_modules/tapable/lib/HookCodeFactory.js:31:10), <anonymous>:16:1)\n    at Cache.get (/Users/th29/projects/wp-block-dev/wp-content/plugins/team-members/node_modules/webpack/lib/Cache.js:82:18)\n    at ItemCacheFacade.get (/Users/th29/projects/wp-block-dev/wp-content/plugins/team-members/node_modules/webpack/lib/CacheFacade.js:115:15)\n    at Compilation._codeGenerationModule (/Users/th29/projects/wp-block-dev/wp-content/plugins/team-members/node_modules/webpack/lib/Compilation.js:3747:9)\n    at codeGen (/Users/th29/projects/wp-block-dev/wp-content/plugins/team-members/node_modules/webpack/lib/Compilation.js:5365:11)\n    at symbolIterator (/Users/th29/projects/wp-block-dev/wp-content/plugins/team-members/node_modules/neo-async/async.js:3482:9)\n    at timesSync (/Users/th29/projects/wp-block-dev/wp-content/plugins/team-members/node_modules/neo-async/async.js:2297:7)\n    at Object.eachLimit (/Users/th29/projects/wp-block-dev/wp-content/plugins/team-members/node_modules/neo-async/async.js:3463:5)\n    at /Users/th29/projects/wp-block-dev/wp-content/plugins/team-members/node_modules/webpack/lib/Compilation.js:5395:14\n    at processQueue (/Users/th29/projects/wp-block-dev/wp-content/plugins/team-members/node_modules/webpack/lib/util/processAsyncTree.js:61:4)\n    at process.processTicksAndRejections (node:internal/process/task_queues:84:11)\n\nGenerated code for /Users/th29/projects/wp-block-dev/wp-content/plugins/team-members/node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[4].use[1]!/Users/th29/projects/wp-block-dev/wp-content/plugins/team-members/node_modules/postcss-loader/dist/cjs.js??ruleSet[1].rules[4].use[2]!/Users/th29/projects/wp-block-dev/wp-content/plugins/team-members/node_modules/sass-loader/dist/cjs.js??ruleSet[1].rules[4].use[3]!/Users/th29/projects/wp-block-dev/wp-content/plugins/team-members/src/team-members/style.scss\n1 | throw new Error(\"Module build failed (from ./node_modules/sass-loader/dist/cjs.js):\\nMissing math operator.\\n\\u001b[34m  ╷\\u001b[0m\\n\\u001b[34m8 │\\u001b[0m                 width: calc(\\u001b[31m100% / #{$i}- 20px\\u001b[0m);\\n\\u001b[34m  │\\u001b[0m \\u001b[31m                            ^^^^^^^^^^^^^^^^^^\\u001b[0m\\n\\u001b[34m  ╵\\u001b[0m\\n  src/team-members/style.scss 8:17  root stylesheet\");");
+__webpack_require__.r(__webpack_exports__);
+// extracted by mini-css-extract-plugin
+
 
 /***/ },
 
@@ -121,53 +163,265 @@ throw new Error("Module build failed (from ./node_modules/mini-css-extract-plugi
   \**********************************************/
 (__unused_webpack_module, __webpack_exports__, __webpack_require__) {
 
-"use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
-/* harmony export */   "default": () => (/* binding */ Edit)
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
 /* harmony export */ });
 /* harmony import */ var _wordpress_block_editor__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @wordpress/block-editor */ "@wordpress/block-editor");
 /* harmony import */ var _wordpress_block_editor__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_wordpress_block_editor__WEBPACK_IMPORTED_MODULE_0__);
 /* harmony import */ var _wordpress_i18n__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @wordpress/i18n */ "@wordpress/i18n");
 /* harmony import */ var _wordpress_i18n__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_wordpress_i18n__WEBPACK_IMPORTED_MODULE_1__);
-/* harmony import */ var react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! react/jsx-runtime */ "react/jsx-runtime");
-/* harmony import */ var react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__);
+/* harmony import */ var _wordpress_blob__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @wordpress/blob */ "@wordpress/blob");
+/* harmony import */ var _wordpress_blob__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(_wordpress_blob__WEBPACK_IMPORTED_MODULE_2__);
+/* harmony import */ var _wordpress_components__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! @wordpress/components */ "@wordpress/components");
+/* harmony import */ var _wordpress_components__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(_wordpress_components__WEBPACK_IMPORTED_MODULE_3__);
+/* harmony import */ var _wordpress_element__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! @wordpress/element */ "@wordpress/element");
+/* harmony import */ var _wordpress_element__WEBPACK_IMPORTED_MODULE_4___default = /*#__PURE__*/__webpack_require__.n(_wordpress_element__WEBPACK_IMPORTED_MODULE_4__);
+/* harmony import */ var _wordpress_data__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! @wordpress/data */ "@wordpress/data");
+/* harmony import */ var _wordpress_data__WEBPACK_IMPORTED_MODULE_5___default = /*#__PURE__*/__webpack_require__.n(_wordpress_data__WEBPACK_IMPORTED_MODULE_5__);
+/* harmony import */ var _wordpress_compose__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! @wordpress/compose */ "@wordpress/compose");
+/* harmony import */ var _wordpress_compose__WEBPACK_IMPORTED_MODULE_6___default = /*#__PURE__*/__webpack_require__.n(_wordpress_compose__WEBPACK_IMPORTED_MODULE_6__);
+/* harmony import */ var react_jsx_runtime__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! react/jsx-runtime */ "react/jsx-runtime");
+/* harmony import */ var react_jsx_runtime__WEBPACK_IMPORTED_MODULE_7___default = /*#__PURE__*/__webpack_require__.n(react_jsx_runtime__WEBPACK_IMPORTED_MODULE_7__);
+
+
+
+
+
+
+
+
+
 
 
 
 function Edit({
   attributes,
-  setAttributes
+  setAttributes,
+  noticeOperations,
+  noticeUI,
+  isSelected
 }) {
   const {
     name,
-    bio
+    bio,
+    url,
+    alt,
+    id,
+    socialLinks
   } = attributes;
-  const onChangeName = name => {
+  const [blobURL, setBlobURL] = (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_4__.useState)();
+  const [selectedLink, setSelectedLink] = (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_4__.useState)();
+  const prevUrl = (0,_wordpress_compose__WEBPACK_IMPORTED_MODULE_6__.usePrevious)(url);
+  const prevIsSelected = (0,_wordpress_compose__WEBPACK_IMPORTED_MODULE_6__.usePrevious)(isSelected);
+  const titleRef = (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_4__.useRef)();
+  const imageObject = (0,_wordpress_data__WEBPACK_IMPORTED_MODULE_5__.useSelect)(select => {
+    const {
+      getMedia
+    } = select('core');
+    return id ? getMedia(id) : null;
+  }, []);
+  const imageSizes = (0,_wordpress_data__WEBPACK_IMPORTED_MODULE_5__.useSelect)(select => {
+    return select(_wordpress_block_editor__WEBPACK_IMPORTED_MODULE_0__.store).getSettings().imageSizes;
+  }, []);
+  const getImageSizeOptions = () => {
+    if (!imageObject) return [];
+    const options = [];
+    const sizes = imageObject.media_details.sizes;
+    for (const key in sizes) {
+      const size = sizes[key];
+      const imageSize = imageSizes.find(s => s.slug === key);
+      if (imageSize) {
+        options.push({
+          label: imageSize.name,
+          value: size.source_url
+        });
+      }
+    }
+    return options;
+  };
+  const onChangeImageSize = newUrl => {
     setAttributes({
-      name
+      url: newUrl
     });
   };
-  const onChangeBio = bio => {
+  const onChangeName = newName => {
     setAttributes({
-      bio
+      name: newName
     });
   };
-  return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsxs)("div", {
-    ...(0,_wordpress_block_editor__WEBPACK_IMPORTED_MODULE_0__.useBlockProps)(),
-    children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)(_wordpress_block_editor__WEBPACK_IMPORTED_MODULE_0__.RichText, {
-      placeholder: (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_1__.__)("Member Name", 'team-member'),
-      tagName: "h4",
-      onChange: onChangeName,
-      value: name
-    }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)(_wordpress_block_editor__WEBPACK_IMPORTED_MODULE_0__.RichText, {
-      placeholder: (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_1__.__)("Member Bio", 'team-member'),
-      tagName: "p",
-      onChange: onChangeBio,
-      value: bio
+  const onChangeBio = newBio => {
+    setAttributes({
+      bio: newBio
+    });
+  };
+  const onSelectImage = image => {
+    if (!image || !image.url) {
+      setAttributes({
+        url: undefined,
+        id: undefined,
+        alt: ''
+      });
+      return;
+    }
+    setAttributes({
+      url: image.url,
+      id: image.id,
+      alt: image.alt
+    });
+  };
+  const onSelectURL = newURL => {
+    setAttributes({
+      url: newURL,
+      id: undefined,
+      alt: ''
+    });
+  };
+  const onUploadError = message => {
+    noticeOperations.removeAllNotices();
+    noticeOperations.createErrorNotice(message);
+  };
+  const removeImage = () => {
+    setAttributes({
+      url: undefined,
+      id: undefined,
+      alt: ''
+    });
+  };
+  const onChangeAlt = alt => {
+    setAttributes({
+      alt
+    });
+  };
+  const addNewSocialItem = () => {
+    setAttributes({
+      socialLinks: [...socialLinks, {
+        icon: "wordpress",
+        link: ""
+      }]
+    });
+    setSelectedLink(socialLinks.length);
+  };
+  (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_4__.useEffect)(() => {
+    if (!id && (0,_wordpress_blob__WEBPACK_IMPORTED_MODULE_2__.isBlobURL)(url)) {
+      setAttributes({
+        url: undefined,
+        alt: ''
+      });
+    }
+  }, []);
+  (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_4__.useEffect)(() => {
+    if ((0,_wordpress_blob__WEBPACK_IMPORTED_MODULE_2__.isBlobURL)(url)) {
+      setBlobURL(url);
+    } else {
+      (0,_wordpress_blob__WEBPACK_IMPORTED_MODULE_2__.revokeBlobURL)(blobURL);
+      setBlobURL();
+    }
+  }, [url]);
+  (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_4__.useEffect)(() => {
+    if (url && !prevUrl) {
+      titleRef.current.focus();
+    }
+  }, [url, prevUrl]);
+  (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_4__.useEffect)(() => {
+    if (prevIsSelected && !isSelected) {
+      setSelectedLink();
+    }
+  }, [isSelected, prevIsSelected]);
+  return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_7__.jsxs)(react_jsx_runtime__WEBPACK_IMPORTED_MODULE_7__.Fragment, {
+    children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_7__.jsx)(_wordpress_block_editor__WEBPACK_IMPORTED_MODULE_0__.InspectorControls, {
+      children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_7__.jsxs)(_wordpress_components__WEBPACK_IMPORTED_MODULE_3__.PanelBody, {
+        title: (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_1__.__)('Image Settings', 'team-members'),
+        children: [id && /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_7__.jsx)(_wordpress_components__WEBPACK_IMPORTED_MODULE_3__.SelectControl, {
+          label: (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_1__.__)('Select Size', 'team-members'),
+          options: getImageSizeOptions(),
+          value: url,
+          onChange: onChangeImageSize
+        }), url && !(0,_wordpress_blob__WEBPACK_IMPORTED_MODULE_2__.isBlobURL)(url) && /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_7__.jsx)(_wordpress_components__WEBPACK_IMPORTED_MODULE_3__.TextareaControl, {
+          label: (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_1__.__)('Alt Text', 'team-members'),
+          value: alt,
+          onChange: onChangeAlt,
+          help: (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_1__.__)('Alternative text describes you image to people cant see Item. Add a short description with its key details', 'team-mmbers')
+        })]
+      })
+    }), url && /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_7__.jsxs)(_wordpress_block_editor__WEBPACK_IMPORTED_MODULE_0__.BlockControls, {
+      group: "inline",
+      children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_7__.jsx)(_wordpress_block_editor__WEBPACK_IMPORTED_MODULE_0__.MediaReplaceFlow, {
+        name: (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_1__.__)("Replace Image", "team-members"),
+        onSelect: onSelectImage,
+        onSelectURL: onSelectURL,
+        onError: onUploadError,
+        accept: "image/*",
+        allowedTypes: ['image'],
+        mediaId: id,
+        mediaURL: url
+      }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_7__.jsx)(_wordpress_components__WEBPACK_IMPORTED_MODULE_3__.ToolbarButton, {
+        onClick: removeImage,
+        children: (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_1__.__)('Remvoe Image', "team-members")
+      })]
+    }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_7__.jsxs)("div", {
+      ...(0,_wordpress_block_editor__WEBPACK_IMPORTED_MODULE_0__.useBlockProps)(),
+      children: [url && /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_7__.jsxs)("div", {
+        className: `wp-block-create-block-team-member-img${(0,_wordpress_blob__WEBPACK_IMPORTED_MODULE_2__.isBlobURL)(url) ? ' is-loading' : ''}`,
+        children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_7__.jsx)("img", {
+          src: url,
+          alt: alt
+        }), (0,_wordpress_blob__WEBPACK_IMPORTED_MODULE_2__.isBlobURL)(url) && /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_7__.jsx)(_wordpress_components__WEBPACK_IMPORTED_MODULE_3__.Spinner, {})]
+      }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_7__.jsx)(_wordpress_block_editor__WEBPACK_IMPORTED_MODULE_0__.MediaPlaceholder, {
+        icon: "admin-users",
+        onSelect: onSelectImage,
+        onSelectURL: onSelectURL,
+        onError: onUploadError,
+        accept: "image/*",
+        allowedTypes: ['image'],
+        disableMediaButtons: url,
+        notices: noticeUI
+      }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_7__.jsx)(_wordpress_block_editor__WEBPACK_IMPORTED_MODULE_0__.RichText, {
+        ref: titleRef,
+        placeholder: (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_1__.__)('Member Name', 'team-member'),
+        tagName: "h4",
+        onChange: onChangeName,
+        value: name,
+        allowedFormats: []
+      }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_7__.jsx)(_wordpress_block_editor__WEBPACK_IMPORTED_MODULE_0__.RichText, {
+        placeholder: (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_1__.__)('Member Bio', 'team-member'),
+        tagName: "p",
+        onChange: onChangeBio,
+        value: bio,
+        allowedFormats: []
+      }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_7__.jsx)("div", {
+        className: "wp-block-create-block-course-team-member-social-links",
+        children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_7__.jsxs)("ul", {
+          children: [socialLinks.map((item, index) => {
+            return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_7__.jsx)("li", {
+              className: selectedLink === index ? "is-selected" : null,
+              children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_7__.jsx)("button", {
+                onClick: () => setSelectedLink(index),
+                "aria-label": (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_1__.__)('Edit Social Link', "team-members"),
+                children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_7__.jsx)(_wordpress_components__WEBPACK_IMPORTED_MODULE_3__.Icon, {
+                  icon: item.icon
+                })
+              })
+            }, index);
+          }), isSelected && /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_7__.jsx)("li", {
+            className: "wp-block-create-block-course-team-member-add-icon-li",
+            children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_7__.jsx)(_wordpress_components__WEBPACK_IMPORTED_MODULE_3__.Tooltip, {
+              text: (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_1__.__)('Add Social Link', "team-members"),
+              children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_7__.jsx)("button", {
+                "aria-label": (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_1__.__)('Add Social Link', "team-members"),
+                onClick: addNewSocialItem,
+                children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_7__.jsx)(_wordpress_components__WEBPACK_IMPORTED_MODULE_3__.Icon, {
+                  icon: "plus"
+                })
+              })
+            })
+          })]
+        })
+      })]
     })]
   });
 }
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ((0,_wordpress_components__WEBPACK_IMPORTED_MODULE_3__.withNotices)(Edit));
 
 /***/ },
 
@@ -177,7 +431,6 @@ function Edit({
   \***********************************************/
 (__unused_webpack_module, __webpack_exports__, __webpack_require__) {
 
-"use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _wordpress_blocks__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @wordpress/blocks */ "@wordpress/blocks");
 /* harmony import */ var _wordpress_blocks__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_wordpress_blocks__WEBPACK_IMPORTED_MODULE_0__);
@@ -200,14 +453,43 @@ __webpack_require__.r(__webpack_exports__);
   },
   attributes: {
     name: {
-      type: "string",
-      source: "html",
+      type: 'string',
+      source: 'html',
       selector: 'h4'
     },
     bio: {
       type: 'string',
       source: 'html',
       selector: 'p'
+    },
+    id: {
+      type: 'number'
+    },
+    alt: {
+      type: 'string',
+      source: 'attribute',
+      selector: 'img',
+      attribute: 'alt',
+      default: ''
+    },
+    url: {
+      type: 'string',
+      source: 'attribute',
+      selector: 'img',
+      attribute: 'src'
+    },
+    socialLinks: {
+      type: 'array',
+      default: [{
+        link: 'https:/facebook.com',
+        icon: 'facebook'
+      }, {
+        link: 'https:/facebook.com',
+        icon: 'instagram'
+      }, {
+        link: 'https:/facebook.com',
+        icon: 'linkedin'
+      }]
     }
   },
   edit: _edit__WEBPACK_IMPORTED_MODULE_2__["default"],
@@ -222,17 +504,19 @@ __webpack_require__.r(__webpack_exports__);
   \**********************************************/
 (__unused_webpack_module, __webpack_exports__, __webpack_require__) {
 
-"use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "default": () => (/* binding */ Save)
 /* harmony export */ });
 /* harmony import */ var _wordpress_block_editor__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @wordpress/block-editor */ "@wordpress/block-editor");
 /* harmony import */ var _wordpress_block_editor__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_wordpress_block_editor__WEBPACK_IMPORTED_MODULE_0__);
-/* harmony import */ var _wordpress_i18n__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @wordpress/i18n */ "@wordpress/i18n");
-/* harmony import */ var _wordpress_i18n__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_wordpress_i18n__WEBPACK_IMPORTED_MODULE_1__);
-/* harmony import */ var react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! react/jsx-runtime */ "react/jsx-runtime");
-/* harmony import */ var react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__);
+/* harmony import */ var _wordpress_components__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @wordpress/components */ "@wordpress/components");
+/* harmony import */ var _wordpress_components__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_wordpress_components__WEBPACK_IMPORTED_MODULE_1__);
+/* harmony import */ var _wordpress_i18n__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @wordpress/i18n */ "@wordpress/i18n");
+/* harmony import */ var _wordpress_i18n__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(_wordpress_i18n__WEBPACK_IMPORTED_MODULE_2__);
+/* harmony import */ var react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! react/jsx-runtime */ "react/jsx-runtime");
+/* harmony import */ var react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__);
+
 
 
 
@@ -241,21 +525,53 @@ function Save({
 }) {
   const {
     name,
-    bio
+    bio,
+    url,
+    alt,
+    id,
+    socialLinks
   } = attributes;
-  return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsxs)("div", {
+  return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsxs)("div", {
     ..._wordpress_block_editor__WEBPACK_IMPORTED_MODULE_0__.useBlockProps.save(),
-    children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)(_wordpress_block_editor__WEBPACK_IMPORTED_MODULE_0__.RichText.Content, {
-      placeholder: (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_1__.__)("Member Name", 'team-member'),
+    children: [url && /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)("img", {
+      src: url,
+      alt: alt,
+      className: id ? `wp-image-${id}` : null
+    }), name && /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)(_wordpress_block_editor__WEBPACK_IMPORTED_MODULE_0__.RichText.Content, {
+      placeholder: (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_2__.__)("Member Name", 'team-member'),
       tagName: "h4",
       value: name
-    }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)(_wordpress_block_editor__WEBPACK_IMPORTED_MODULE_0__.RichText.Content, {
-      placeholder: (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_1__.__)("Member Bio", 'team-member'),
+    }), bio && /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)(_wordpress_block_editor__WEBPACK_IMPORTED_MODULE_0__.RichText.Content, {
+      placeholder: (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_2__.__)("Member Bio", 'team-member'),
       tagName: "p",
       value: bio
+    }), socialLinks.length > 0 && /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)("div", {
+      className: "wp-block-create-block-course-team-member-social-links",
+      children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)("ul", {
+        children: socialLinks.map((item, index) => {
+          return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)("li", {
+            children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)("a", {
+              href: item.link,
+              children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)(_wordpress_components__WEBPACK_IMPORTED_MODULE_1__.Icon, {
+                icon: item.icon
+              })
+            })
+          }, index);
+        })
+      })
     })]
   });
 }
+
+/***/ },
+
+/***/ "@wordpress/blob"
+/*!******************************!*\
+  !*** external ["wp","blob"] ***!
+  \******************************/
+(module) {
+
+module.exports = window["wp"]["blob"];
 
 /***/ },
 
@@ -265,7 +581,6 @@ function Save({
   \*************************************/
 (module) {
 
-"use strict";
 module.exports = window["wp"]["blockEditor"];
 
 /***/ },
@@ -276,7 +591,6 @@ module.exports = window["wp"]["blockEditor"];
   \********************************/
 (module) {
 
-"use strict";
 module.exports = window["wp"]["blocks"];
 
 /***/ },
@@ -287,8 +601,37 @@ module.exports = window["wp"]["blocks"];
   \************************************/
 (module) {
 
-"use strict";
 module.exports = window["wp"]["components"];
+
+/***/ },
+
+/***/ "@wordpress/compose"
+/*!*********************************!*\
+  !*** external ["wp","compose"] ***!
+  \*********************************/
+(module) {
+
+module.exports = window["wp"]["compose"];
+
+/***/ },
+
+/***/ "@wordpress/data"
+/*!******************************!*\
+  !*** external ["wp","data"] ***!
+  \******************************/
+(module) {
+
+module.exports = window["wp"]["data"];
+
+/***/ },
+
+/***/ "@wordpress/element"
+/*!*********************************!*\
+  !*** external ["wp","element"] ***!
+  \*********************************/
+(module) {
+
+module.exports = window["wp"]["element"];
 
 /***/ },
 
@@ -298,7 +641,6 @@ module.exports = window["wp"]["components"];
   \******************************/
 (module) {
 
-"use strict";
 module.exports = window["wp"]["i18n"];
 
 /***/ },
@@ -309,7 +651,6 @@ module.exports = window["wp"]["i18n"];
   \**********************************/
 (module) {
 
-"use strict";
 module.exports = window["ReactJSXRuntime"];
 
 /***/ }
@@ -346,7 +687,42 @@ module.exports = window["ReactJSXRuntime"];
 /******/ 		return module.exports;
 /******/ 	}
 /******/ 	
+/******/ 	// expose the modules object (__webpack_modules__)
+/******/ 	__webpack_require__.m = __webpack_modules__;
+/******/ 	
 /************************************************************************/
+/******/ 	/* webpack/runtime/chunk loaded */
+/******/ 	(() => {
+/******/ 		var deferred = [];
+/******/ 		__webpack_require__.O = (result, chunkIds, fn, priority) => {
+/******/ 			if(chunkIds) {
+/******/ 				priority = priority || 0;
+/******/ 				for(var i = deferred.length; i > 0 && deferred[i - 1][2] > priority; i--) deferred[i] = deferred[i - 1];
+/******/ 				deferred[i] = [chunkIds, fn, priority];
+/******/ 				return;
+/******/ 			}
+/******/ 			var notFulfilled = Infinity;
+/******/ 			for (var i = 0; i < deferred.length; i++) {
+/******/ 				var [chunkIds, fn, priority] = deferred[i];
+/******/ 				var fulfilled = true;
+/******/ 				for (var j = 0; j < chunkIds.length; j++) {
+/******/ 					if ((priority & 1 === 0 || notFulfilled >= priority) && Object.keys(__webpack_require__.O).every((key) => (__webpack_require__.O[key](chunkIds[j])))) {
+/******/ 						chunkIds.splice(j--, 1);
+/******/ 					} else {
+/******/ 						fulfilled = false;
+/******/ 						if(priority < notFulfilled) notFulfilled = priority;
+/******/ 					}
+/******/ 				}
+/******/ 				if(fulfilled) {
+/******/ 					deferred.splice(i--, 1)
+/******/ 					var r = fn();
+/******/ 					if (r !== undefined) result = r;
+/******/ 				}
+/******/ 			}
+/******/ 			return result;
+/******/ 		};
+/******/ 	})();
+/******/ 	
 /******/ 	/* webpack/runtime/compat get default export */
 /******/ 	(() => {
 /******/ 		// getDefaultExport function for compatibility with non-harmony modules
@@ -387,34 +763,68 @@ module.exports = window["ReactJSXRuntime"];
 /******/ 		};
 /******/ 	})();
 /******/ 	
+/******/ 	/* webpack/runtime/jsonp chunk loading */
+/******/ 	(() => {
+/******/ 		// no baseURI
+/******/ 		
+/******/ 		// object to store loaded and loading chunks
+/******/ 		// undefined = chunk not loaded, null = chunk preloaded/prefetched
+/******/ 		// [resolve, reject, Promise] = chunk loading, 0 = chunk loaded
+/******/ 		var installedChunks = {
+/******/ 			"team-members/index": 0,
+/******/ 			"team-members/style-index": 0
+/******/ 		};
+/******/ 		
+/******/ 		// no chunk on demand loading
+/******/ 		
+/******/ 		// no prefetching
+/******/ 		
+/******/ 		// no preloaded
+/******/ 		
+/******/ 		// no HMR
+/******/ 		
+/******/ 		// no HMR manifest
+/******/ 		
+/******/ 		__webpack_require__.O.j = (chunkId) => (installedChunks[chunkId] === 0);
+/******/ 		
+/******/ 		// install a JSONP callback for chunk loading
+/******/ 		var webpackJsonpCallback = (parentChunkLoadingFunction, data) => {
+/******/ 			var [chunkIds, moreModules, runtime] = data;
+/******/ 			// add "moreModules" to the modules object,
+/******/ 			// then flag all "chunkIds" as loaded and fire callback
+/******/ 			var moduleId, chunkId, i = 0;
+/******/ 			if(chunkIds.some((id) => (installedChunks[id] !== 0))) {
+/******/ 				for(moduleId in moreModules) {
+/******/ 					if(__webpack_require__.o(moreModules, moduleId)) {
+/******/ 						__webpack_require__.m[moduleId] = moreModules[moduleId];
+/******/ 					}
+/******/ 				}
+/******/ 				if(runtime) var result = runtime(__webpack_require__);
+/******/ 			}
+/******/ 			if(parentChunkLoadingFunction) parentChunkLoadingFunction(data);
+/******/ 			for(;i < chunkIds.length; i++) {
+/******/ 				chunkId = chunkIds[i];
+/******/ 				if(__webpack_require__.o(installedChunks, chunkId) && installedChunks[chunkId]) {
+/******/ 					installedChunks[chunkId][0]();
+/******/ 				}
+/******/ 				installedChunks[chunkId] = 0;
+/******/ 			}
+/******/ 			return __webpack_require__.O(result);
+/******/ 		}
+/******/ 		
+/******/ 		var chunkLoadingGlobal = globalThis["webpackChunkteam_members"] = globalThis["webpackChunkteam_members"] || [];
+/******/ 		chunkLoadingGlobal.forEach(webpackJsonpCallback.bind(null, 0));
+/******/ 		chunkLoadingGlobal.push = webpackJsonpCallback.bind(null, chunkLoadingGlobal.push.bind(chunkLoadingGlobal));
+/******/ 	})();
+/******/ 	
 /************************************************************************/
-var __webpack_exports__ = {};
-// This entry needs to be wrapped in an IIFE because it needs to be in strict mode.
-(() => {
-"use strict";
-/*!***********************************!*\
-  !*** ./src/team-members/index.js ***!
-  \***********************************/
-__webpack_require__.r(__webpack_exports__);
-/* harmony import */ var _wordpress_blocks__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @wordpress/blocks */ "@wordpress/blocks");
-/* harmony import */ var _wordpress_blocks__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_wordpress_blocks__WEBPACK_IMPORTED_MODULE_0__);
-/* harmony import */ var _style_scss__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./style.scss */ "./src/team-members/style.scss");
-/* harmony import */ var _edit__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./edit */ "./src/team-members/edit.js");
-/* harmony import */ var _save__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./save */ "./src/team-members/save.js");
-/* harmony import */ var _block_json__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./block.json */ "./src/team-members/block.json");
-/* harmony import */ var _team_member__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./team-member */ "./src/team-members/team-member/index.js");
-
-
-
-
-
-
-(0,_wordpress_blocks__WEBPACK_IMPORTED_MODULE_0__.registerBlockType)(_block_json__WEBPACK_IMPORTED_MODULE_4__.name, {
-  edit: _edit__WEBPACK_IMPORTED_MODULE_2__["default"],
-  save: _save__WEBPACK_IMPORTED_MODULE_3__["default"]
-});
-})();
-
+/******/ 	
+/******/ 	// startup
+/******/ 	// Load entry module and return exports
+/******/ 	// This entry module depends on other loaded chunks and execution need to be delayed
+/******/ 	var __webpack_exports__ = __webpack_require__.O(undefined, ["team-members/style-index"], () => (__webpack_require__("./src/team-members/index.js")))
+/******/ 	__webpack_exports__ = __webpack_require__.O(__webpack_exports__);
+/******/ 	
 /******/ })()
 ;
 //# sourceMappingURL=index.js.map

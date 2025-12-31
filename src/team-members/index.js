@@ -6,8 +6,6 @@ import metadata from './block.json';
 import "./team-member"
 
 registerBlockType(metadata.name, {
-
 	edit: Edit,
-
 	save,
 });

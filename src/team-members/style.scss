@@ -7,13 +7,17 @@
 	@for $i from 1 through 6 {
 		&.has-#{$i}-columns {
 			.wp-block-create-block-team-member {
-				width: calc(100% / #{$i}- 20px);
+				width: calc((100% / #{$i}) - 20px);
 			}
 		}
 	}
 
 	.wp-block-create-block-team-member {
 		margin: 10px;
+
+		img {
+			margin-bottom: 20px;
+		}
 
 		h4 {
 			color: #222;
@@ -27,6 +31,28 @@
 			font-size: 16px;
 			font-weight: 300;
 			margin-bottom: 5px;
+		}
+
+		.wp-block-create-block-course-team-member-social-links {
+			ul {
+				list-style: none;
+				padding: 0;
+				margin: 15px -5px 0;
+
+				li {
+					display: inline-block;
+					margin: 5px;
+
+					a {
+						text-decoration: none;
+					}
+
+					span.dashicon {
+						color: #4e4e4e;
+					}
+
+				}
+			}
 		}
 	}
 }

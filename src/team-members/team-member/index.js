@@ -14,15 +14,48 @@ registerBlockType('create-block/team-member', {
     },
     attributes: {
         name: {
-            type: "string",
-            source: "html",
-            selector: 'h4'
+            type: 'string',
+            source: 'html',
+            selector: 'h4',
         },
         bio: {
             type: 'string',
             source: 'html',
-            selector: 'p'
+            selector: 'p',
         },
+        id: {
+            type: 'number',
+        },
+        alt: {
+            type: 'string',
+            source: 'attribute',
+            selector: 'img',
+            attribute: 'alt',
+            default: '',
+        },
+        url: {
+            type: 'string',
+            source: 'attribute',
+            selector: 'img',
+            attribute: 'src',
+        },
+        socialLinks: {
+            type: 'array',
+            default: [
+                {
+                    link: 'https:/facebook.com',
+                    icon: 'facebook'
+                },
+                {
+                    link: 'https:/facebook.com',
+                    icon: 'instagram'
+                },
+                {
+                    link: 'https:/facebook.com',
+                    icon: 'linkedin'
+                }
+            ]
+        }
     },
     edit: Edit,
     save: Save,

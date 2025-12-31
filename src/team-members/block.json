@@ -9,7 +9,10 @@
 	"description": "This is team members block",
 	"example": {},
 	"supports": {
-		"html": false
+		"html": false,
+		"align": [
+			"wide"
+		]
 	},
 	"attributes": {
 		"columns": {
