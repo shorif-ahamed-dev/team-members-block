@@ -41,20 +41,20 @@ registerBlockType('create-block/team-member', {
         },
         socialLinks: {
             type: 'array',
-            default: [
-                {
-                    link: 'https:/facebook.com',
-                    icon: 'facebook'
+            default: [],
+            source: 'query',
+            selector: ".wp-block-create-block-course-team-member-social-links ul li",
+            query: {
+                icon: {
+                    source: 'attribute',
+                    attribute: 'data-icon'
                 },
-                {
-                    link: 'https:/facebook.com',
-                    icon: 'instagram'
-                },
-                {
-                    link: 'https:/facebook.com',
-                    icon: 'linkedin'
+                link: {
+                    selector: 'a',
+                    source: 'attribute',
+                    attribute: 'href'
                 }
-            ]
+            }
         }
     },
     edit: Edit,

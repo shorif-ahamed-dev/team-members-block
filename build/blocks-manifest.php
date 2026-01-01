@@ -11,7 +11,49 @@ return array(
 		'icon' => 'groups',
 		'description' => 'This is team members block',
 		'example' => array(
-			
+			'attributes' => array(
+				'columns' => 2
+			),
+			'innerBlocks' => array(
+				array(
+					'name' => 'create-block/team-member',
+					'attributes' => array(
+						'name' => 'John Doe',
+						'bio' => 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam neque nibh, tincidunt ut facilisis vitae, ullamcorper sit amet lectus. Proin porta vulputate purus.',
+						'url' => 'https://picsum.photos/id/1012/300/200',
+						'socialLinks' => array(
+							array(
+								'icon' => 'facebook'
+							),
+							array(
+								'icon' => 'twitter'
+							),
+							array(
+								'icon' => 'instagram'
+							)
+						)
+					)
+				),
+				array(
+					'name' => 'create-block/team-member',
+					'attributes' => array(
+						'name' => 'Jane Doe',
+						'bio' => 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam neque nibh, tincidunt ut facilisis vitae, ullamcorper sit amet lectus. Proin porta vulputate purus.',
+						'url' => 'https://picsum.photos/id/1011/300/200',
+						'socialLinks' => array(
+							array(
+								'icon' => 'facebook'
+							),
+							array(
+								'icon' => 'twitter'
+							),
+							array(
+								'icon' => 'instagram'
+							)
+						)
+					)
+				)
+			)
 		),
 		'supports' => array(
 			'html' => false,
